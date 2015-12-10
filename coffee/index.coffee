@@ -9,7 +9,7 @@ module.exports = (options = {}) ->
 
   # build a command with arguments
   cmnd = 'java'
-  args = ['-jar']
+  args = ['-Djava.awt.headless=true', '-jar']
   args.push options.jarPath ? "plantuml.jar"
   args.push '-p'
 
