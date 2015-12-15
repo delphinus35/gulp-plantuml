@@ -4,7 +4,7 @@
   "description": "gulp plugin for plantuml.",
   "main": "./index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "coffee -bcp ./coffee/index.coffee > ./index.js"
   },
   "repository": {
     "type": "git",
